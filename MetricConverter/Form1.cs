@@ -8,6 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+/**
+ * author Vance Field
+ * version 20-Jan-2017
+ **/
 namespace MetricConverter
 {
     public partial class frame : Form
