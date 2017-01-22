@@ -72,6 +72,9 @@ namespace MetricConverter
                     inches = meters * 39.37;
                     feet = (int) inches / 12;
                     double remInches = inches - (feet * 12); // remaining inches
+
+                    // round 
+
                     txtOutput.Text = feet.ToString() + " ft " + remInches.ToString("0.##") + " in";
                 }
                 catch (Exception er)
