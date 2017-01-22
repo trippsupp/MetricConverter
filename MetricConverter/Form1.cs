@@ -67,7 +67,8 @@ namespace MetricConverter
             // if meters to feet/inches
             if (index == 0)
             {
-                try { 
+                try
+                { 
                     meters = Double.Parse(txtInput1.Text);
                     inches = meters * 39.37;
                     feet = (int) inches / 12;
@@ -86,10 +87,31 @@ namespace MetricConverter
             // if feet/inches to meters
             if (index == 1)
             {
-                try { 
-                    feet = Int32.Parse(txtInput1.Text);
+                try
+                {
+                    // if input1 is empty
+                    if (txtInput1.Text.Equals(""))
+                    {
+                        feet = 0; // set feet to 0
+                    }
+                    else
+                    {
+                        feet = Int32.Parse(txtInput1.Text);
+                    }                  
+                      
                     double ftInInches = feet * 12;
-                    inches = Double.Parse(txtInput2.Text) + ftInInches;
+
+                    // if input2 is empty
+                    if(txtInput2.Equals(""))
+                    {
+                        inches = 0; // set inches to 0
+                    }
+                    else
+                    {
+                        inches = Double.Parse(txtInput2.Text) + ftInInches;
+
+                    }
+
                     meters = inches / 39.37;              
                     txtOutput.Text = meters.ToString("0.##");
                 }
