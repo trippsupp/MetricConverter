@@ -38,7 +38,7 @@ namespace MetricConverter
             {
                 lblInput.Text = "Meters";
                 lblOutput.Text = "Feet/Inches";
-                txtInput2.Visible = false;
+                txtInput2.Enabled = false; // hide textfield 
             }
 
             // if feet/in to meters
@@ -46,7 +46,7 @@ namespace MetricConverter
             {
                 lblInput.Text = "Feet / Inches";
                 lblOutput.Text = "Meters";
-                txtInput2.Visible = true;
+                txtInput2.Enabled = true; // show textfield
             }
 
             // clear text fields

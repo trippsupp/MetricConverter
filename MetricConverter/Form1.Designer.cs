@@ -104,11 +104,11 @@
             // 
             // txtInput2
             // 
+            this.txtInput2.Enabled = false;
             this.txtInput2.Location = new System.Drawing.Point(156, 61);
             this.txtInput2.Name = "txtInput2";
             this.txtInput2.Size = new System.Drawing.Size(45, 20);
             this.txtInput2.TabIndex = 7;
-            this.txtInput2.Visible = false;
             // 
             // frame
             // 
