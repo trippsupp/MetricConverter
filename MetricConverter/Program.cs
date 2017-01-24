@@ -16,7 +16,7 @@ namespace MetricConverter
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frame());
+            Application.Run(new frame()); // creates new Form
         }
     }
 }
